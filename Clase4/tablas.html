@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<style>
+    /* Estilos para la tabla */
+    table
+    {
+        width: 800px;
+        height: 600px;
+        border: 5px red dotted;
+    }
+    
+    /* Estilos para las etiquetas TD y TH */
+    td,th
+    {
+        border: 1px solid;
+    }
+
+    /* Estilos para un elemento en particular*/
+    #coloreado
+    {
+        background-color: darksalmon;
+        color: floralwhite;
+        font-size: 1.5em;
+    }
+
+    /* Estilos para un elemento en particular*/
+    #coloreadoFila
+    {
+        background-color: goldenrod;
+    }
+    
+    /* Estilos para un elemento en particular*/
+    #celda15
+    {
+        background-image: url(img/imagen.jpg);
+        background-size: cover;
+    }
+
+
+</style>
+<body>
+    <table cellspacing = 0 cellpadding = 50>
+        <tr>
+            <th id="coloreado">Celda 1</th>
+            <th>Celda 2</th>
+            <th>Celda 3</th>
+            <th>Celda 4</th>
+        </tr>
+        <tr id="coloreadoFila">
+            <th>Celda 5</th>
+            <th>Celda 6</th>
+            <th>Celda 7</th>
+            <th>Celda 8</th>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">Celda 9</td>
+            <td rowspan="2" valign="top">Celda 12</td>
+        </tr>
+        <tr>
+            <td>Celda 13</td>
+            <td>Celda 14</td>
+            <td id="celda15"></td>
+        </tr>
+    </table>
+</body>
+</html>

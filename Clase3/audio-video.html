@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>audio</h1>
+    <!-- 
+        controls: muestra los controles de reproduccion y pausa 
+        loop autoplay: hace que el audio se vuelva a reproducir en forma consecutiva
+        formatos de audio: mp3, ogg y wav
+    -->
+    <audio controls id="miaudio" loop autoplay>
+    <source src="audio/audio1.mp3" type="audio/mpeg">
+        <!--
+            ACLARACIÓN: Cualquier texto dentro de las etiquetas <audio> </ audio> será mostrado en los navegadores que no admitan la etiqueta <audio>.
+            lo mismo pasará con el video. NO ES POR EL FORMATO SINO POR LAS ETIQUETAS
+        -->
+       <p>Tu navegador no soporta este archivo de audio. Puedes descargarlo de aquí<a href="audio/audio1.mp3">aquí</a></p>
+    </audio>
+    
+    <!-- mediante funciones de javascript los botones funcionan para reproducir o pausar -->
+    <input type="button" value="PLAY" onClick="document.getElementById('miaudio').play();">
+    <input type="button" value="PAUSA" onClick="document.getElementById('miaudio').pause();">
+
+    <h1>video</h1>
+    <video controls id="mivideo"  width="400" height="250" poster="video/poster.jpg">
+        <source src="video/lautaro.mp4" type="video/mp4">
+        <p>Tu navegador no soporta este archivo de audio. Puedes descargarlo de aquí<a href="audio/0802.mp3">aquí</a></p>
+    </video>
+
+    <!-- mediante funciones de javascript los botones funcionan para reproducir o pausar -->
+    <input type="button" value="PLAY" onClick="document.getElementById('mivideo').play();">
+    <input type="button" value="PAUSA" onClick="document.getElementById('mivideo').pause();">
+</body>
+</html>
