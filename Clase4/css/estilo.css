@@ -1,0 +1,120 @@
+/* selector universal */
+*{margin:0;}
+
+header
+  {
+    /* float:center; */
+    margin:auto;/*centrado del header*/
+    background-color:lightgray;
+    width:960px;
+    height:120px;
+  }
+
+header h1
+  {
+    position:relative;/*El h1 se desplaza segun lo dicho por top y left
+    respecto de su posicion natural*/
+    top:20px;/*me corro 20px hacia abajo del margen superior izquierdo*/
+    left:30px;/*me corro 30px a la derecha del margen superior izquierdo*/
+    font-family:helvetica;
+    padding:5px 5px 5px 20px;/*arriba-derecha-abajo-izquierda*/
+    /* margin-right:10px; */
+  }
+
+header p
+  {
+    position:relative;
+    top:15px;
+    left:30px;
+    margin:0;
+  }
+
+nav
+  {
+    padding-top:5px;/*espacio interno entre texto y el techo del nav*/
+    padding-bottom:5px;/*espacio interno entre texto y el piso del nav*/
+    position:relative;
+    top:50px;
+    left:0px;
+    text-align:center;
+    margin:0;
+    background-color:red;
+    float:center;
+  }
+/*color del vinculo no visitado*/
+a:link
+  {
+      color: #ff0;  
+  }
+/*color del vinculo al hacer clic*/
+a:active
+  {
+      color: #f00;  
+  }
+/*color del vinculo ya visitado*/
+a:visited
+  {
+      color: #fff;  
+  }
+
+nav a
+  {
+    margin-right: 30px;/*espacio con el vinculo vecino q tiene a su derecha*/
+    text-decoration: none;/*le saco el subrayado q trae x defecto la etiqueta a*/
+  }
+/*cuando paso el mouse x encima de cualquier vinculo q este dentro de <nav>*/
+nav a:hover
+  {
+      opacity: 0.6;
+      background-color: green;
+      -webkit-transition-property: background;
+      -webkit-transition-duration: 2s;/*transicion del hover*/
+      -webkit-transition-timing-function: ease;
+  }
+
+h2
+  {
+    position:relative;
+    top:30px;
+  }
+
+section
+  {
+    float:center;
+    width:960px;
+    height:470px;
+    background-color:silver;
+    text-align:left;
+    margin:auto;
+  }
+
+aside
+  {
+    background-color:gray;
+    width:250px;
+    height:400px;
+    position:relative;
+    top:-430px;/*se desplaza hacia arriba 430 px*/
+    left:320px;/*se desplaza hacia la derecha 320 px*/
+    text-align:center;
+    color: white;
+    margin:auto;/*centrado*/
+  }
+
+footer
+    {
+      position:relative;
+      top:-400px;
+      border-radius:0px 0px 5px 5px;/*borde redondeado*/
+      margin:0 auto;
+      width:960px;
+      background-color:gray;
+      text-align:center;
+    }
+
+  /*vinculos q estan dentro del <footer>  */
+footer a
+  {
+    margin-left: 15px;/*espacio con el vinculo vecino q tiene a su izquierda*/
+    text-decoration: none;
+  }
