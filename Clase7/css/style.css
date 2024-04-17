@@ -1,0 +1,48 @@
+#caja1 
+{
+    font-size: 24px;
+    background-color: lavenderblush;
+     width: 30%;
+    
+     /* 
+    Padding: 
+    2em en este caso equivale a 24px * 2 = 48px (es decir, el doble 
+    del tamaño de font-size configurado para este elemento) 
+    */
+    padding: 2em;
+    margin-bottom: 1.5em; /* 1.5 x 24px = 36px -> distancia con la caja de abajo */
+    max-width: 200px;
+    border: mediumvioletred 0.25em solid;/* 0.25 * 24px = 6px */
+    box-sizing: border-box;
+}
+
+#caja2 
+{
+    font-size: 24px;
+    background-color: palegoldenrod;
+
+    /* 2rem en este caso equivale a 16px * 2 = 32px (es decir, el doble 
+    del tamaño de font-size configurado para este elemento) */
+    padding: 2rem;
+    max-width: 300px;
+    border: mediumvioletred 0.25rem solid;/* 0.25 * 16px = 4px */
+    box-sizing: border-box;
+}
+
+#caja3
+{
+    /* 
+        En este ejemplo, el padding-right(20px) y el padding-left(50px)
+        hacen que la caja se "ensanche" un total de 70px respecto de
+        la caja 1 (esto se soluciona haciendo que todas las cajas tengan
+        box-sizing: border-box)
+     */
+    background-color: azure;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 50px;
+    
+    /*Atajos padding*/
+    padding: 0px 20px 0px 50px ;
+}

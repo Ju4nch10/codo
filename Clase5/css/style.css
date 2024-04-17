@@ -1,0 +1,36 @@
+body 
+{
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    font-size: small;
+    color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+/* Etiquetas */
+
+h1
+{
+    color: beige;
+    text-decoration: underline;
+}
+
+p
+{
+    color: chartreuse;
+    text-align: justify;
+}
+
+/* ID */
+
+#ejemplo-ID
+{
+    color:yellow;
+}
+
+/* Clase */
+.ejemplo-Clase
+{
+    color: red;
+}
