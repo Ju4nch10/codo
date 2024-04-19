@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+    <style>
+        /*  Si tenemos que redondear solo alguno de los cuatro vértices podemos 
+            utilizar alguna de las siguientes propiedades:
+
+            border-top-left-radius
+            border-top-right-radius
+            border-bottom-right-radius
+            border-bottom-left-radius 
+        */
+        
+        #caja1 {
+            border-top-left-radius: 20px;  
+            border-bottom-right-radius: 20px;  
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+        }
+
+
+        #caja2 {
+            border-top-right-radius: 40px;  
+            background-color:#aa0;
+            width:200px;
+            padding:10px;
+            margin-top:10px;
+        }
+
+
+        body {
+            background: white;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caja1">
+        <h3>caja 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, </p>
+    </div>
+
+    <div id="caja2">
+        <h3>caja 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, </p>
+    </div>
+</body>
+</html>

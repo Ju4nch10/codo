@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2</title>
+    <style>
+        /* 
+            Con la propiedad box-shadow podemos aplicar múltiples sombras a un 
+            objeto. Para esto debemos aplicar la siguiente sintaxis:
+
+            box-shadow: [desplazamiento en x] [desplazamiento en y] [desenfoque]
+             [color] , [desplazamiento en x] [desplazamiento en y] [desenfoque]
+              [color] etc.
+        
+            Por ejemplo si queremos que aparezca una sombra de color rojo en la 
+            parte superior izquierda y una sombra verde en la parte inferior 
+            derecha podemos aplicar lo siguiente:
+        */
+
+        #caja {
+            box-shadow: -30px -30px 5px darkseagreen,
+                         30px  30px 20px coral;
+            border-radius: 20px;  
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+        }
+
+        body {
+            background: white;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caja">
+        <h3>caja 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, </p>
+    </div>
+</body>
+
+</html>

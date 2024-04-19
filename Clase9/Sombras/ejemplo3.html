@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 3</title>
+    <style>
+        /* 
+            Sombras interiores 
+            Otra posibilidad de la propiedad box-shadow es la de implementar 
+            la sombra interior al objeto, para esto debemos anteceder a los 
+            valores la palabra inset. 
+            
+            Por ejemplo si queremos un recuadro con sombra interior de color 
+            rosado y sombra exterior de color verde podemos aplicar los 
+            siguientes valores:
+        */
+
+        #caja {
+            /*  inset = interior */
+            box-shadow: inset   0px 0px 40px deeppink,
+                                0px 0px 40px #0f0; 
+            border-radius: 20px;  
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+        }
+
+        body {
+            background: white;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caja">
+        <h3>caja 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, </p>
+    </div>
+</body>
+
+</html>

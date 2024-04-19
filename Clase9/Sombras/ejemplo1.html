@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+    <style>
+        /* 
+            La propiedad box-shadow permite definir una sombra a un objeto de 
+            la página. Debemos definir tres valores y un color. 
+
+            - El desplazamiento horizontal de la sombra, positivo significa que 
+            la sombra se encuentra a la derecha del objeto, un desplazamiento 
+            negativo pondrá la sombra a la izquierda.
+
+            - El desplazamiento vertical, uno negativo la sombra será en la 
+            parte superior del objeto, uno positivo la sombra estará por debajo.
+
+            - El tercer parámetro es el radio de desenfoque, si se pone a 0 la 
+            sombra será fuerte y con color liso, más grande el número, más 
+            borrosa será.
+
+            - El último valor es el color a aplicar a la sombra.
+        
+        */
+
+        #caja1 {
+            box-shadow: 30px 10px 20px #aaa;
+            border-radius: 20px;
+            background-color: #ddd;
+            width: 200px;
+            padding: 10px;
+        }
+
+        #caja2 {
+            box-shadow: -10px -10px 20px #aaa;
+            border-radius: 20px;
+            background-color: #aa0;
+            width: 200px;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+        body {
+            background: white;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caja1">
+        <h3>caja 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, </p>
+    </div>
+
+    <div id="caja2">
+        <h3>caja 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, </p>
+    </div>
+</body>
+
+</html>

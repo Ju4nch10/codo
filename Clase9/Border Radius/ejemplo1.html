@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+    <style>
+        /* La propiedad border-radius permite crear esquinas redondeadas. 
+        Especificamos en píxeles u otra medida el radio de redondeo de la 
+        o las esquinas. */
+        
+        #caja1 {
+            /* los cuatro angulos con el mismo radio */
+            border-radius: 20px;
+            background-color: #ddd;
+            width: 200px;
+            padding: 10px;
+        }
+
+
+        #caja2 {
+            /* angulos: superior derecho inferior izquierdo */
+            border-radius: 20px 40px 40px 20px;
+            background-color: #aa0;
+            width: 200px;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+
+        body {
+            background: white;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caja1">
+        <h3>caja 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, </p>
+    </div>
+
+    <div id="caja2">
+        <h3>caja 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, </p>
+    </div>
+</body>
+</html>

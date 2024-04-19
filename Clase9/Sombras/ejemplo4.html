@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 4</title>
+    <style>
+        /* 
+            Propiedad text-shadow: nos permite definir una sombra a un texto, 
+            la sintaxis más común es:
+
+            Elemento { 
+                text-shadow: desplazamientoX desplazamientoY radio-de-desenfoque
+                 color; 
+            }
+
+            La propiedad tiene 4 valores que son los siguientes:
+
+            - El desplazamiento horizontal de la sombra, un desplazamiento 
+            negativo pondrá la sombra a la izquierda.
+
+            - El desplazamiento vertical, un valor negativo dispone la sombra 
+            en la parte superior del texto, uno positivo la sombra estará por 
+            debajo del texto.
+
+            - El tercer parámetro es el radio de desenfoque, si se pone a 0 la 
+            sombra será fuerte y con color liso, más grande el número, más 
+            borrosa será.
+
+            - El último parámetro es el color de la sombra.
+         */
+
+         /* Queremos que un texto tenga una sombra en la parte inferior a 
+         derecha con un pequeño desenfoque de color gris */
+        #titulo1 {
+            text-shadow: 5px 5px 5px #aaa;
+        }
+
+        /* Queremos que la sombra se disponga en la parte superior izquierda de 
+        cada letra */
+        #titulo2 {
+        text-shadow: -5px -5px 5px #aaa;
+        }
+
+        /* Otra sintaxis de text-shadow es aplicar varias sombras al texto */
+        #titulo3 {
+        text-shadow: 3px 3px 5px #f00,
+                    6px 6px 5px #0f0,
+                    9px 9px 5px #00f;
+        }
+
+        h1 {
+        font-size:50px;
+        }
+
+        body {
+        background:white;
+        margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo1">Titulo sombreado</h1>
+    <h1 id="titulo2">Titulo sombreado</h1>
+    <h1 id="titulo3">Titulo sombreado</h1>
+</body>
+</html>
